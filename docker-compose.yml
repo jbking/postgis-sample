@@ -9,7 +9,7 @@ services:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
     volumes:
-      - my-db:/var/lib/postgres
+      - my-db:/var/lib/postgresql/data
   web:
     build: .
     stdin_open: true
